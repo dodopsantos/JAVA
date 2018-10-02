@@ -1,0 +1,62 @@
+drop schema public cascade;
+
+create schema public;
+
+create table estado (
+	id serial not null,
+    descricao char(2) not null,
+    primary key(id)
+);
+create table cidade (
+	id serial not null,
+    nome varchar(50) not null,
+    estado_id integer not null,
+    primary key(id),
+    foreign key (estado_id) references estado(id)
+);
+create table cliente (
+    id serial not null,
+    CNPJ varchar (30) unique not null,
+    nome varchar (50) not null,
+    email varchar (100),
+    telefone varchar (20),
+    id_cidade integer not null,
+    primary key(id),
+    foreign key(id_cidade) references cidade(id)
+);
+create table endereco(	
+	id_cliente integer not null,
+    numero integer not null,
+    rua varchar(200),
+    id_cidade integer not null,
+    primary key(id_cliente),
+    foreign key(id_cliente) references cliente(id),
+    foreign key(id_cidade) references cidade(id)
+);
+create table produto (
+	id serial not null,
+    tipo varchar (50) not null,
+    preco integer not null,
+    primary key (id)
+);
+create table venda (
+    id serial not null,
+	id_cliente integer not null,
+    primary key (id),
+    foreign key (id_cliente) references cliente(id)
+);
+create table produto_venda (
+    id_produto integer not null,
+    id_venda integer not null,
+    quantidade integer not null,
+    valor integer not null,
+    primary key (id_venda),
+    foreign key (id_produto) references produto (id),
+    foreign key (id_venda) references venda (id)
+);
+create table estoque (
+	id_produto integer not null,
+    quantidade integer not null,
+    primary key (id_produto),
+    foreign key (id_produto) references produto(id)
+);
