@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.trido.bella_flor">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:icon="@drawable/logobellaflor"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ClientActivity" />
+        <activity android:name=".UpdateClientActivity" />
+        <activity android:name=".UpdateProductActivity" />
+        <activity android:name=".UpdateOrderActivity" />
+        <activity android:name=".ClActivity" />
+        <activity android:name=".ProductActivity" />
+        <activity android:name=".PdActivity" />
+        <activity android:name=".OrderActivity" />
+        <activity android:name=".OrActivity" />
+        <activity android:name=".FinishOrderActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".UpdateLoginActivity" />
+        <activity android:name=".ComissionActivity"></activity>
+    </application>
+
+</manifest>

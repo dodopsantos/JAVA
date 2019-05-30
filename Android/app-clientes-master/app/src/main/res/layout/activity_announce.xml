@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textBrand"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinner"
+        android:layout_alignLeft="@+id/spinner"
+        android:layout_alignStart="@+id/spinner"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="SELECIONE A MARCA"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="13dp"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/spinnerBrand"
+        android:layout_width="361dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textModel"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinner"
+        android:layout_alignLeft="@+id/spinner"
+        android:layout_alignStart="@+id/spinner"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="SELECIONE O MODELO"
+        android:textAlignment="center" />
+
+    <Spinner
+        android:id="@+id/spinnerModel"
+        android:layout_width="353dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textYear"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinner"
+        android:layout_alignLeft="@+id/spinner"
+        android:layout_alignStart="@+id/spinner"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="SELECIONE O ANO"
+        android:textAlignment="center" />
+
+    <com.appyvet.materialrangebar.RangeBar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rangebar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mrb_rangeBar="true"
+        app:mrb_pinMaxFont="15sp"
+        app:mrb_pinMinFont="12sp"
+        app:mrb_rangeBarPaddingBottom="20dp"
+        app:mrb_selectorBoundaryColor="@color/colorAccent"
+        app:mrb_selectorBoundarySize="2dp"
+        app:mrb_pinTextColor="@color/white"
+        app:mrb_temporaryPins="true"
+        app:mrb_selectorSize="10dp"
+        app:mrb_tickEnd="10"
+        app:mrb_tickInterval="1"
+        app:mrb_tickStart="5"
+        app:mrb_pinRadius="14dp"
+        app:mrb_rangeBar_rounded="true"
+
+        app:mrb_pinColor="#6c3f6a"/>
+
+
+
+    <TextView
+        android:id="@+id/textValue"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinner"
+        android:layout_alignLeft="@+id/spinner"
+        android:layout_alignStart="@+id/spinner"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="SELECIONE O VALOR"
+        android:textAlignment="center" />
+
+    <com.appyvet.materialrangebar.RangeBar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rangebar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mrb_rangeBar="true"
+        app:mrb_pinMaxFont="15sp"
+        app:mrb_pinMinFont="12sp"
+        app:mrb_rangeBarPaddingBottom="20dp"
+        app:mrb_selectorBoundaryColor="@color/signupColor"
+        app:mrb_selectorBoundarySize="2dp"
+        app:mrb_pinTextColor="@color/white"
+        app:mrb_temporaryPins="true"
+        app:mrb_selectorSize="10dp"
+        app:mrb_tickEnd="10"
+        app:mrb_tickInterval="1"
+        app:mrb_tickStart="5"
+        app:mrb_pinRadius="14dp"
+        app:mrb_rangeBar_rounded="true"
+        app:mrb_connectingLineColors="@color/black"
+        app:mrb_pinColor="#6c3f6a"/>
+
+    <TextView
+        android:id="@+id/textState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SELECIONE O ESTADO"
+        android:gravity="center"
+        android:textAlignment="center"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SELECIONE A CIDADE"
+        android:gravity="center"
+        android:textAlignment="center"
+
+        />
+
+    <Spinner
+        android:id="@+id/spinnerCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAlignment="center"
+        />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ANUNCIAR" />
+
+</android.widget.LinearLayout>

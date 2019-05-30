@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "344933213530",
+    "firebase_url": "https://bella-flor.firebaseio.com",
+    "project_id": "bella-flor",
+    "storage_bucket": "bella-flor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:344933213530:android:7d7bdbd935806747",
+        "android_client_info": {
+          "package_name": "com.example.trido.bella_flor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "344933213530-nab8e4reftrt2u6gmpecprs61f6c7neo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.trido.bella_flor",
+            "certificate_hash": "539ad286e5e046887fae78a0f1880855b806da6e"
+          }
+        },
+        {
+          "client_id": "344933213530-9enso56pc661bt5oufncbfejhd5gnbkj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1UTeT0FGEoTWShpUsOtQl8jwxooCMcUY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "344933213530-9enso56pc661bt5oufncbfejhd5gnbkj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

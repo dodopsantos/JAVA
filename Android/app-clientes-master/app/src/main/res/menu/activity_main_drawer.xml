@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item android:title="Busca por categoria">
+        <menu>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Carros" />
+            <item
+                android:id="@+id/nav_bikes"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Motos" />
+
+        </menu>
+    </item>
+
+
+    <item android:title="Guia de anuncios">
+
+        <menu>
+            <item
+                android:id="@+id/nav_new_user"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Anunciar" />
+            <item
+                android:id="@+id/nav"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Meus anuncios" />
+
+        </menu>
+
+    </item>
+
+    <item android:title="Conta de usuário">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_user"
+                android:gravity="center"
+                android:title="Login" />
+            <item
+                android:id="@+id/nasadv"
+                android:title="Logout" />
+
+        </menu>
+
+    </item>
+
+
+
+
+</menu>

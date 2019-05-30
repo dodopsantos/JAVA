@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "996762404780",
+    "firebase_url": "https://recognizer-5d4c6.firebaseio.com",
+    "project_id": "recognizer-5d4c6",
+    "storage_bucket": "recognizer-5d4c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996762404780:android:a12e54bc71e13184",
+        "android_client_info": {
+          "package_name": "com.example.trido.recognizer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "996762404780-b2sn9b5eqvilogofsn9m545cq8ftb68a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaPqbFl0ObvWKt45PNfFwrb5zowLu_LQE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "996762404780-b2sn9b5eqvilogofsn9m545cq8ftb68a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Funções">
+        <menu>
+        <item
+            android:id="@+id/nav_client"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Clientes" />
+        <item
+            android:id="@+id/nav_product"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Produtos" />
+        <item
+            android:id="@+id/nav_order"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Pedidos" />
+        </menu>
+    </item>
+
+
+    <item android:title="Consultas">
+    <menu>
+        <item
+            android:id="@+id/nav_comission"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Comissão" />
+        <item
+            android:id="@+id/nav_orderfinish"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Pedidos finalizados" />
+    </menu>
+    </item>
+
+    <item android:title="Opções">
+        <menu>
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Ligar para fábrica" />
+            <item
+                android:id="@+id/nav_login"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Alterar Login" />
+
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ComissionActivity"
+    android:background="@drawable/cadastro">
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:background="@drawable/descriptionboxlogo"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="40dp">
+
+        <TextView
+            android:id="@+id/txtNameComission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="JEFFERSON"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtValueComission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="R$: 1000.00"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="start">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtMonthComission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="COMISSÃO DO MÊS: 01 "
+            android:textAllCaps="true"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_marginTop="100dp">
+        </TextView>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtOldMonthComission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fiperprice"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:textSize="15dp"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:hint="MÊS ANTERIOR: R$ 1000.00"
+        android:paddingTop="10dp"/>
+
+</LinearLayout>
